@@ -1,0 +1,30 @@
+Locators are used to locate and interact with web elements:
+-Name
+-Id
+-Class
+-Linktext
+-Partiallinktext
+-Tag name
+-Path
+-Css
+
+Linktext:
+- the element must be in a tag, a tag is also called anchor tag
+and it usually contains links
+- the element must have some text
+Rules:
+- if one of the condition is not fulfilled you can't use the
+linktext locator
+
+Partial linktext: (You can use partial text to locate elements)
+- the element must be in a tag, a tag is also called anchor tag
+and it usually contains links
+- the element must have some text
+Rules:
+- if one of the condition is not fulfilled you can't use the
+linktext locator
+
+WebElements commands:
+1. clear()---> clear the text box
+2. gettext()---> return the text on a web element
+3. getAttribute()---> to get the value of a specific attribute

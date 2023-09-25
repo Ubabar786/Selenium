@@ -1,0 +1,9 @@
+Locators are used to locate and interact with web elements:
+-Name
+-Id
+-Class
+-Linktext
+-Partiallinktext
+-Tag name
+-Path
+-Css
