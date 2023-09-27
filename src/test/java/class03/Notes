@@ -1,0 +1,30 @@
+Xpath:
+1) Absolute Xpath:
+Reasons why its not recommended:
+- the path may change if any changes are made in the document
+- its too long
+- E.g. Facebook.com -> /html/body/div/div/div/div/div/div/div[2]/div/div/form/div/div/input
+
+Syntax: html/body/p
+<html>
+  <body>
+   <input>
+    <p>hello</p>*
+  </body>
+</html>
+
+2) Relative Xpath
+
+Syntax:
+- Attribute - //tagname[@attribute='value']
+
+- Text - //tagname[text()='value']
+
+- Contains method:
+//tagname[contains(@attribute,'value')]
+//tagname[contains(text(),'value')]
+
+- Starts-with method:
+//tagname[starts-with(@attribute,'value')]
+//tagname[starts-with(text(),'value')]
+
