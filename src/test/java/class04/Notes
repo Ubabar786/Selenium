@@ -1,0 +1,18 @@
+CSS Locator:
+-CSS doesn't allow you to access elements using TEXT.
+
+Attribute - tagname[attribute='value']
+
+Shortcuts:
+- ID = tagname#value
+- Class = tagname.value - If there is a space in the class you replace the space with a dot
+- Contains = tagname[attribute*='value'] - Whenever an attribute has digits or spaces we can use it to avoid locator getting redundant
+- Starts-with = tagname[attribute^='value']
+- Ends-with = tagname[attribute$='value']
+
+Radio Buttons:
+- You can only select one option.
+- isSelected() -> if the element is selected or not = boolean
+- isEnabled() -> if the element is active or not = boolean
+- isDisplayed() -> if the element is visible on screen or not = boolean
+

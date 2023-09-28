@@ -38,6 +38,5 @@ public class Homework {
 
         driver.quit();
 
-
     }
 }
