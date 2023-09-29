@@ -1,0 +1,26 @@
+Selenium review:
+1) Initiate the instance of the WebDriver
+2) driver.get("url"); - doesn't keep history - waits for whole page to load
+   driver.navigate.to("url"); - keeps history, back forward and refresh - doesn't wait for whole page to load
+   navigate.refresh(); - refresh the page
+   navigate.back(); - go back one step
+   navigate.forward(); - go forward one step
+3) driver.quit(); - quit is going to close the whole browser
+   driver.close(); - close is going to close the current window
+4) driver.manage().window().maximize(); - maximise the window
+   driver.getTitle(); - get the title
+   driver.getCurrentUrl(); - get the URL of the website
+
+- Locators are there available to us in selenium to help us locate the WebElement that we need
+1. ID
+2. Name
+3. Class
+4. Linktext
+5. Partial linktext
+6. Xpath
+7. Css
+8. Tagname
+- We have a variety of locators so that we can choose the one that fits our criteria and available
+  to us in the DOM to access the element.
+
+
