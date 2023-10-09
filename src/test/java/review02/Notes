@@ -1,0 +1,39 @@
+DropDown:
+
+Does it have a select tag?   <Select>
+ if yes - use Select class in selenium to deal with it
+ if no - deal with it like a normal Web Element
+
+  If  <Select>:
+
+Locate the DD;
+Create an Obj of Select class and pass in the Web element;
+Use method from Select class ro select the desired option:.byVisibleText();.byIndex(); indexing in DD starts from 0!.byValue();
+
+ Multi Select DD:
+
+Locate WebElement;
+Create an Obj of Select class and pass in the Web element;
+Use available methods to select the desired element:.byVisibleText();.byIndex(); indexing in DD starts from 0!.byValue();
+  Additional methods for MultiSelectDD:.DeselectByIndex();.DeselectByVisibleText();.DeselectByValue();
+
+        IsMultiple() --> returns true if the DD is multiSelect
+        GetOptions() --> returns you all the dd options
+
+ALERTS/POP UPS:
+
+WebBased - are easy to handle, we do that exact same way as we do with regular web elements;
+Window based - we can't handle them using Selenium as they're outside the browser;
+Java Script based alerts - dealt with using Alerts class in Selenium.
+We can:
+   accept();
+   dismiss();
+   sendText();
+   getText();
+
+Handling alerts:
+
+switchToAlert()- will switch the focus to alert;
+alert.accept();
+alert.dismiss();
+
