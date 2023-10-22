@@ -1,0 +1,25 @@
+DYNAMIC TABLES
+
+Static table: the table whose content can't be modified by the user
+
+Dynamic: the table whose content can't be modified by the user
+
+Pagination: has multiple pages
+
+Advance xPath:
+1) get to the nearest approachable sibling
+2) write the relationship of the desired element
+   and the one that you have approached
+
+- Following sibling:
+- use /following-sibling::tagname to get to your desired element and indexing depending on which sibling you want
+Syntax:
+- //input[@id='favourite-book']/following-sibling::input[1]
+
+- Preceding sibling:
+Syntax:
+- //input[@id='favourite-book']/preceding-sibling::input[1]
+
+- Parent-Child:
+Syntax:
+- //div[@id='familyTree']/child::input[1]

@@ -1,0 +1,29 @@
+KEYS performs keyboard operations:
+locate  the web Element
+and send  keys(Keys.ENTER/TAB/ESCAPE/DELETE)
+Use Case:
+
+if a user story requires to enter key operation
+or you can also use KEYS.DELETE to delete if clear command does not work
+
+Action class allows us to do operations such as mimicking mouse operations:
+Hover over
+Drag and drop
+Right click (ContextClick)
+Double click
+Simple click
+etc
+
+Use built when calling multiple methods in Actions class
+
+The build() method in Selenium is used to create a composite action
+that contains all the actions gathered which are ready to be performed.
+The perform() method is used to execute the chain of actions which are built using the
+Action build method.
+
+USAGE:
+1) Declare the instance
+                  Actions action=new Actions(driver);
+2) action.ContextClick(WebElement).perform();
+3) another way to duse Actions class - use built() method when calling multiple methods in a row:
+                  action.clickAndHold(draggable).moveToElement(droppable).release().build().perform();

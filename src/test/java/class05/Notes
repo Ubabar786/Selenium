@@ -8,7 +8,7 @@ does it have a select tag?   <Select>
 
 Locate the DD;
 Create an Obj of Select class and pass in the Web element;
-Use method from Select class ro select the desired option:.byVisibleText();.byIndex(); indexing in DD starts from 0!.byValue();
+Use method from Select class to select the desired option:.byVisibleText();.byIndex(); indexing in DD starts from 0!.byValue();
 
  Multi Select DD:
 

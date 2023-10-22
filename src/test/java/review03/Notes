@@ -1,0 +1,20 @@
+Waits:
+Thread.sleep ---> disadvantages:
+1) It is going to wait even if the element has been found for the mentioned duration, which makes out code slower.
+
+Implicit Wait:
+- Whenever we are waiting for the element to be found, we use implicit wait.
+1) Implicit wait is going to wait until "THE WEBELEMENT IS FOUND".
+a) if the element is found, it will end the wait time and move on
+b) if the element is not found, (in duration of time out) it will return us with an exception
+- Syntax: driver.manage().timeouts().implicitWait(Duration.ofSeconds(20));
+- 20 seconds: Max wait time
+
+Explicit Wait:
+- We use explicit wait until the condition is fulfilled
+1) Explicit wait is going to wait until th webelement fulfils the condition
+a) as soon as thr condition is fulfilled it moves on to the NEXT line of code
+b) if the condition is NOT fulfilled (in the duration of time out) it will give an exception
+- Syntax: WebDriverWait wait = new WebDriverWait (driver, Duration.ofSeconds(20));
+wait.until(ExpectedConditions. "THE CONDITION FOR WHICH YOU WANT TO WAIT" (The WebElement)
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[test()='Enabled']"));

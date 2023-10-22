@@ -10,10 +10,10 @@ public class ImplicitWait extends CommonMethods {
         String browser="chrome";
         openBrowserAndLaunchApplication(url, browser);
 
-        //         find the button and click on it
+        // find the button and click on it
         WebElement button1 = driver.findElement(By.xpath("//button[@id='show_text_synchronize']"));
         button1.click();
-//        get the text that appears
+        // get the text that appears
 
         WebElement text1 = driver.findElement(By.xpath("//p[text()='Hello, this message appeared after you clicked the button']"));
         String text = text1.getText();
